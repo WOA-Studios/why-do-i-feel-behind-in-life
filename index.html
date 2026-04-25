@@ -1109,11 +1109,14 @@
   // Hide MailerLite success message
   $('.ml-subscribe-form-40349427 .row-success').hide();
 
-  // SHOW YOUR QUIZ RESULT
-document.getElementById("resultCard").style.display = "block";
+  // Hide placeholder message
+  document.getElementById("preResultText").style.display = "none";
 
-// Scroll to result
-document.getElementById("resultCard").scrollIntoView({ behavior: "smooth" });
+  // Show quiz result
+  document.getElementById("resultCard").style.display = "block";
+
+  // Scroll to result
+  document.getElementById("resultCard").scrollIntoView({ behavior: "smooth" });
 }
       </script>
   
@@ -1123,7 +1126,7 @@ document.getElementById("resultCard").scrollIntoView({ behavior: "smooth" });
             fetch("https://assets.mailerlite.com/jsonp/1527840/forms/185602590550001404/takel")
         </script>
       </div>
-      <p class="small" style="margin-top:18px;">Your result will appear after you submit your email.</p>
+      
     </section>
 
     <section class="card result" id="resultCard">
