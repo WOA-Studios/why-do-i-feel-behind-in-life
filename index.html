@@ -1101,10 +1101,20 @@
   
   <script>
     function ml_webform_success_40349427() {
-      var $ = ml_jQuery || jQuery;
-      $('.ml-subscribe-form-40349427 .row-success').show();
-      $('.ml-subscribe-form-40349427 .row-form').hide();
-    }
+  var $ = ml_jQuery || jQuery;
+
+  // Hide MailerLite form
+  $('.ml-subscribe-form-40349427 .row-form').hide();
+
+  // Hide MailerLite success message
+  $('.ml-subscribe-form-40349427 .row-success').hide();
+
+  // SHOW YOUR QUIZ RESULT
+document.getElementById("resultCard").style.display = "block";
+
+// Scroll to result
+document.getElementById("resultCard").scrollIntoView({ behavior: "smooth" });
+}
       </script>
   
   
